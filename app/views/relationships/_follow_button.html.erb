@@ -7,6 +7,7 @@
   <% else %>
     <%= form_for(current_user.relationships.build) do |f| %>
      <%= hidden_field_tag :follow_id,user.id %>
+        
        <%=f.submit 'follow', class: 'btn btn-primary btn-block' %>
     <% end %>
   <% end %>  
